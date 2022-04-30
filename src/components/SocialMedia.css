@@ -12,6 +12,7 @@
     margin-left: 15px;
 }
 .social-media-l {
+    transition: 0.5s;
     margin: 0;
     text-align: center;
     display: flex;
@@ -19,6 +20,15 @@
     row-gap: 20px;
 }
 .social-media-links a {
+    transition: 0.5s;
     color: white;
     font-size: 30px;
+}
+.social-media-l:hover a {
+    transition: 0.5s;
+    opacity: .5;
+}
+.social-media-l a:hover {
+    transition: 0.5s;
+    opacity: 1;
 }

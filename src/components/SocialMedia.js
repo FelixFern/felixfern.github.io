@@ -9,9 +9,9 @@ function SocialMedia() {
             <div className='line'></div>
             <div className='social-media-l'>
                 <a href='https://github.com/FelixFern'><FaGithub></FaGithub></a>
-                <a><FaLinkedin></FaLinkedin></a>
-                <a><FaInstagram></FaInstagram></a>
-                <a><FaTwitter></FaTwitter></a>
+                <a href='https://github.com/FelixFern'><FaLinkedin></FaLinkedin></a>
+                <a href='https://github.com/FelixFern'><FaInstagram></FaInstagram></a>
+                <a href='https://github.com/FelixFern'><FaTwitter></FaTwitter></a>
             </div>
         </div>
     )
