@@ -1,0 +1,45 @@
+header { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-right: 9.5%;
+}
+header h3 {
+    transition: 0.5s;
+    color: white;
+    line-height: 0;
+}
+header span {
+    transition: 0.5s;
+    color: var(--orange-accent);
+}
+header .nav-links {
+    display: flex;
+    column-gap: 50px;
+}
+header .nav-links a {
+    transition: 0.5s;
+    color: white;
+    text-decoration: none;
+}
+header .nav-links:hover .links h3{
+    opacity: .5;
+}
+header .nav-links .links h3:hover, .btn-orange{
+    opacity: 1;
+}
+.btn-orange {
+    border: 3px solid var(--orange-accent);
+    text-align: center;
+    padding: 0 7%;
+}
+.btn-orange h3 {
+    color: var(--orange-accent);
+}
+.btn-orange:hover {
+    background-color: var(--orange-accent);
+}
+.btn-orange:hover h3 {
+    color: white;
+}

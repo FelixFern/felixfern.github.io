@@ -1,0 +1,24 @@
+.social-media-links {
+    text-align: center;
+    height: 100vh;
+    margin-left: 2%;
+    position: fixed;
+}
+.line {
+    background-color: white;
+    width: 4px;
+    height: 60vh;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+.social-media-l {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.social-media-links a {
+    color: white;
+    font-size: 30px;
+}
