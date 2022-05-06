@@ -11,6 +11,7 @@ html {
     background-color: var(--bg-color);
     overflow-x: hidden;
     height: fit-content;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4 {
@@ -27,7 +28,7 @@ p {
     overflow: hidden;
 }
 .social-media {
-    width: 5vw;
+    width: 3vw;
 }
 .main {
     width: 92vw;
@@ -35,23 +36,21 @@ p {
 }
 .navbar { 
     margin: auto;
+    position: absolute;
+    left: 11.5vw;
 }
 .content {
     width: 80vw;
     margin: auto;
 }
-.home-content {
-    top: 45%;
-    transform: translateY(-55%);
-    position: absolute;
-}
+/* Home */
+
 .home {
-    height: 88vh;
-    display: block;
+    height: 100vh;
 }
 .home h1{
-     line-height: 10px;
-     font-size: 2.5rem;
+    line-height: 10px;
+    font-size: 2.5rem;
 }
 .home h3 {
     font-size: 1rem;
@@ -83,15 +82,48 @@ p {
     color: white;
     border-radius: 5px;
 }
-
-@keyframes updown {
-    0% {
-        transform: translateY(-20%);
-    }
-    100% {
-        transform: translateY(20%);
-    }
-    
+.home-content {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+}
+/* Works */
+.works {
+    height: fit-content;
+    min-height: 100vh;
+    position: relative;
+}
+.works-content {
+    width: 100%;
+}
+.title {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.title h1 {
+    width: fit-content;
+    line-height: 0;
+    vertical-align: baseline;
+}
+.title h1 span {
+    color: var(--orange-accent);
+}
+.title .line {
+    margin: 0;
+    width: 85%;
+    height: 5px;
+    vertical-align: baseline;
+}
+.projects {
+    margin-bottom: 100px;
+    display: grid;
+    gap: 10px;
+    margin: auto;
+    grid-template-columns: auto auto auto;
 }
 @media only screen and (max-width: 800px) {
     .main-container {
@@ -100,7 +132,26 @@ p {
     .social-media {
         display: none;
     }
+    /* Home */
     .home .btn {
         padding: 1.5% 3%;
+    }
+    .content {
+        width: 76vw;
+    }
+    .title{
+        display: block;
+    }
+    .title h1 {
+        padding-bottom: 20px;
+    }
+    .title .line {
+        height: 1.5px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /* Works */
+    .projects {
+        display: block;
     }
 }

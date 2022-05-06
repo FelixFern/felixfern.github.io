@@ -18,10 +18,10 @@ function Navbar() {
                 <div className={hamburger ? 'line2 phase-2' : 'line2'}></div>
                 <div className={hamburger ? 'line3 phase-3' : 'line3'}></div>
             </div>
-            <div className='nav-links'>
+            <div className='nav-links'  >
                 <a href='#about' className={hamburger ? 'links display-block' : 'links display-none'}><h3>about<span>me</span></h3></a>
                 <a href='#contact' className={hamburger ? 'links display-block' : 'links display-none'}><h3>contact</h3></a>
-                <a href="#work" className={hamburger ? 'btn-orange links display-block' : 'btn-orange links display-none'}><h3>work</h3></a>
+                <a href="#works" className={hamburger ? 'btn-orange links display-block' : 'btn-orange links display-none'}><h3>work</h3></a>
             </div>
         </header>
     )

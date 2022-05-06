@@ -92,13 +92,12 @@ header .nav-links .links h3:hover, .btn-orange{
 
 @media only screen and (max-width: 800px) {
     header { 
-        margin-top: 5%;
+        margin-top: 10%;
         display: block;
     }
     .name {
         cursor: pointer;
         position: absolute;
-        left: 10vw;
     }
     .hamburger {
         z-index: 100;
@@ -109,7 +108,7 @@ header .nav-links .links h3:hover, .btn-orange{
         position: absolute;
         margin: 0;
         margin-top: 5px;
-        right: 10vw;
+        right: 8vw;
     }
     .phase-1 {
         transition: 0.8s;
