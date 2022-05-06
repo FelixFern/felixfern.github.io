@@ -29,6 +29,8 @@
     opacity: .5;
 }
 .social-media-l a:hover {
+    color: var(--orange-accent);
     transition: 0.5s;
     opacity: 1;
 }
+

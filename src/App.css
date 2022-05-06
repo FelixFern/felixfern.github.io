@@ -10,6 +10,7 @@ html {
     padding: 0;
     background-color: var(--bg-color);
     overflow-x: hidden;
+    height: fit-content;
 }
 
 h1, h2, h3, h4 {
@@ -26,9 +27,80 @@ p {
     overflow: hidden;
 }
 .social-media {
-    width: 8%;
+    width: 5vw;
 }
 .main {
-    width: 92%;
-    margin-left: 20px;
+    width: 92vw;
+    margin: auto;
+}
+.navbar { 
+    margin: auto;
+}
+.content {
+    width: 80vw;
+    margin: auto;
+}
+.home-content {
+    top: 45%;
+    transform: translateY(-55%);
+    position: absolute;
+}
+.home {
+    height: 88vh;
+    display: block;
+}
+.home h1{
+     line-height: 10px;
+     font-size: 2.5rem;
+}
+.home h3 {
+    font-size: 1rem;
+    line-height: 0;
+    color: var(--orange-accent);
+}
+.home h4 {
+    font-size: 1rem;
+    color: var(--orange-accent);
+}
+.home .home-desc {
+    font-size: 1rem;
+    padding: 15px 0 25px 0;
+    width: 50%;
+    height: fit-content;
+}
+.home .btn {
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: 0.5s;
+    border: 3px solid var(--orange-accent);
+    text-decoration: none;
+    color : var(--orange-accent);
+    padding: 0.8% 2.5%;
+    font-weight: 700;
+}
+.home .btn:hover {
+    transition: 0.5s;
+    background-color: var(--orange-accent);
+    color: white;
+    border-radius: 5px;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-20%);
+    }
+    100% {
+        transform: translateY(20%);
+    }
+    
+}
+@media only screen and (max-width: 800px) {
+    .main-container {
+        width: 100%;
+    }
+    .social-media {
+        display: none;
+    }
+    .home .btn {
+        padding: 1.5% 3%;
+    }
 }

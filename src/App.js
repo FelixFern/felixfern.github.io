@@ -13,7 +13,20 @@ function App() {
                 <SocialMedia></SocialMedia>
             </div>
             <div className="main">
-                <Navbar></Navbar>
+                <div className='navbar'>
+                    <Navbar></Navbar>
+                </div>
+                <div className='content'>
+                    <div id="#home" className='home'>
+                        <div className='home-content'>
+                            <h4>Hi, my name is</h4>
+                            <h1>Felix Fernando</h1>
+                            <p className='home-desc'>i’m currently a student studying Mathematics at Bandung Institute of Technology with huge interest in frontend development and UI/UX design. </p>
+                            <a href='#works' className='btn'>check out my work</a>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
   );
