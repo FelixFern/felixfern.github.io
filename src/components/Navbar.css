@@ -132,9 +132,10 @@ header .nav-links .links h3:hover, .btn-orange{
     .nav-links {
         position: absolute;
         text-align: right;
-        right: 10vw;
+        right: 8vw;
         flex-direction: column;
         padding-top: 50px;
+        z-index: 99;
     }
     .links {
         transform: translateX(50%);
