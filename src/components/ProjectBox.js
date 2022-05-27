@@ -1,6 +1,6 @@
 import React from 'react'
 import './ProjectBox.css'
-import {FaReact, FaFigma, FaJsSquare} from 'react-icons/fa'
+import {SiReact, SiFigma, SiJavascript, SiFlutter, SiFirebase, SiHtml5, SiCss3} from 'react-icons/si'
 
 function ProjectBox(props) {
     let stacks = props.stacks
@@ -16,12 +16,21 @@ function ProjectBox(props) {
                         {stacks.map((stack,key) => {
                             if(stack == "react") {
                                 console.log(stack)
-                                return (<FaReact className='stack-icon'></FaReact>)
-                            }
-                            else if(stack == "figma") {
-                                return (<FaFigma className='stack-icon'></FaFigma>)
-                            }
-                            })
+                                return (<SiReact className='stack-icon'></SiReact>)
+                            } else if(stack == "figma") {
+                                return (<SiFigma className='stack-icon'></SiFigma>)
+                            } else if(stack == "flutter") {
+                                return (<SiFlutter className='stack-icon'></SiFlutter>)
+                            } else if(stack == "firebase") {
+                                return (<SiFirebase className='stack-icon'></SiFirebase>)
+                            } else if(stack == "js") {
+                                return (<SiJavascript className='stack-icon'></SiJavascript>)
+                            } else if(stack == "html") {
+                                return (<SiHtml5 className='stack-icon'></SiHtml5>)
+                            } else if(stack == "css") {
+                                return (<SiCss3 className='stack-icon'></SiCss3>)
+                            } 
+                        })
                         }
                     </div>
                 </div>

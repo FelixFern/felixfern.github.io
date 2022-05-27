@@ -1,15 +1,22 @@
 .project-main-box {
     position: relative;
+    border-radius: 10px;
+    overflow: hidden;
     width: 100%;
     height: 13vw;
 }
 .project-main-box .color-fill {
+    transition: 0.5s;
     z-index: -1;
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: var(--bg-color);
-    opacity: .85;
+    opacity: 0;
+}
+.project-main-box:hover .color-fill {
+    transition: 0.5s;
+    opacity: 0.85;
 }
 .project-main-box .bg-image{
     z-index: -2;
@@ -19,6 +26,8 @@
     object-fit: cover;
 }
 .project-main-box .content {
+    opacity: 0;
+    transition: 0.8s;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,6 +35,13 @@
     width: 80%;
     height: fit-content;
 }
+
+.project-main-box:hover .content {
+    transition: 0.8s;
+    display: block;
+    opacity: 1;
+}
+
 .project-main-box .head {
     display: flex;
     align-items: center;
@@ -47,9 +63,15 @@
     margin-top: 20px;
     width: 80%;
 }
-.project-main-box .stack-icon {
+.project-main-box .stack-icon:nth-child(odd) {
     color: var(--orange-accent);
     font-size: 1.25rem;
+    margin-left: 10px;
+}
+.project-main-box .stack-icon:nth-child(even) {
+    color: var(--red-accent);
+    font-size: 1.25rem;
+    margin-left: 10px;
 }
 
 @media only screen and (max-width: 800px) {

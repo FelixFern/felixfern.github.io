@@ -6,7 +6,20 @@
     --red-accent: #FF3D3D;
     --green-accent: #3DFF68;
 }
+::-webkit-scrollbar {
+    width: 5px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    width: 2px;
+    background: var(--orange-accent);
+}
 html { 
     margin: 0;
     padding: 0;
@@ -15,7 +28,6 @@ html {
     height: fit-content;
     scroll-behavior: smooth;
 }
-
 h1, h2, h3, h4 {
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -84,13 +96,14 @@ p {
 .home-content {
     position: absolute;
     top: 35%;
+    z-index: 99;
     transform: translateY(-50%);
 }
 .shapes { 
     width: 80vw;
     height: 100vh;
     position: absolute;
-    z-index: -1;
+    z-index: -5;
 }
 .shapes > * {
     transition: 0.5s;
@@ -228,7 +241,6 @@ p {
 /* Works */
 .works {
     height: fit-content;
-    min-height: 100vh;
     position: relative;
 }
 .works-content {
@@ -238,8 +250,6 @@ p {
     width: 100%;
     margin-top: 30px;
     margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
     align-items: center
 }
 .title h1 {
@@ -250,11 +260,29 @@ p {
 .title h1 span {
     color: var(--orange-accent);
 }
-.title .line {
-    margin: 0;
-    width: 85%;
-    height: 5px;
+.title .line-container { 
     vertical-align: baseline;
+    display: flex;
+    overflow: hidden;
+    column-gap: 5px;
+}
+.title .line-container > * {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    margin: auto;
+    margin-top: 15px;
+    width: 33vw;
+    height: 2px;
+}
+.title .line-orange {
+    background-color: var(--orange-accent);
+}
+.title .line-red {
+    background-color: var(--red-accent);
+}
+.title .line-green {
+    background-color: var(--green-accent);
 }
 .projects {
     margin-bottom: 100px;
@@ -262,6 +290,26 @@ p {
     gap: 10px;
     margin: auto;
     grid-template-columns: auto auto auto;
+}
+/* Contact Me */
+.contact-me {
+    height: fit-content;
+    padding-bottom: 200px;
+}
+.contact-me .btn {
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: 0.5s;
+    border: 3px solid var(--orange-accent);
+    text-decoration: none;
+    color : var(--orange-accent);
+    padding: 0.8% 2.5%;
+    font-weight: 700;
+}
+.contact-me .btn:hover {
+    transition: 0.5s;
+    background-color: var(--orange-accent);
+    color: white;
+    border-radius: 5px;
 }
 @media only screen and (max-width: 800px) {
     .main-container {
