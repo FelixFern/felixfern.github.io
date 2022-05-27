@@ -429,4 +429,24 @@ footer p {
     .projects {
         display: block;
     }
+    /* About Me*/
+
+    .about-me .content {
+        display: block;
+        text-align: center;
+    }
+    .about-me .picture img{
+        text-align: center;
+        margin: auto;
+    }
+    .about-me .picture .color-fill {
+        width: 40vw;
+        height: 40vw;
+        transform: translate(50%,0);
+        right: 50%;
+    }
+    .about-me .stacks {
+        text-align: center;
+        display: block;
+    }
 }
