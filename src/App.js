@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, MoveIn, MoveOut, ZoomOut, FadeOut} from "react-scroll-motion";
-import {SiReact, SiFigma, SiJavascript, SiFlutter, SiFirebase, SiHtml5, SiCss3, SiPython} from 'react-icons/si'
+import {SiReact, SiJavascript, SiHtml5, SiCss3, SiPython} from 'react-icons/si'
 import './App.css';
 
 import Navbar from './components/Navbar';
