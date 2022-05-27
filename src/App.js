@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Animator, ScrollContainer, ScrollPage, batch, Fade, MoveIn, MoveOut, ZoomOut, FadeOut} from "react-scroll-motion";
+import {SiReact, SiFigma, SiJavascript, SiFlutter, SiFirebase, SiHtml5, SiCss3, SiPython} from 'react-icons/si'
 import './App.css';
 
 import Navbar from './components/Navbar';
@@ -53,77 +54,109 @@ function App() {
                                 </Animator>
                             </div>
                         </ScrollPage>
-                        <ScrollPage page={1}>
-                            <div id="works" className='works'>
-                                <div className='works-content'>
-                                    <div className='title'> 
-                                        <Animator animation={MoveIn(-200, 0)}>
-                                            <h1>my <span>works</span></h1>
-                                        </Animator>
-                                        <Animator animation={MoveIn(1000, 0)}>
-                                        <div className='line-container'>
-                                            <div className='line-orange'></div>
-                                            <div className='line-red'></div>
-                                            <div className='line-green'></div>
-                                        </div>
-                                        </Animator>
-                                    </div>
-                                    <Animator animation={MoveIn(0, 300)}>
-                                        <div className='projects'>
-                                            <ProjectBox
-                                                type="Portfolio Website"
-                                                title="Joel Foo Portfolio Website"
-                                                desc="a portofolio website for a videographer and photographer based in Tangerang, Indonesia."
-                                                stacks={["react"]}
-                                                image='img/projects/joel.png'
-                                            ></ProjectBox>
-                                            <ProjectBox
-                                                type="Flutter App"
-                                                title="Buangin App"
-                                                desc="a prototype app to connect the community
-                                                and waster collectors for the process of buying and selling waste."
-                                                stacks={["flutter", "firebase"]}
-                                                image='img/projects/buangin.jpg'
-                                            ></ProjectBox>
-                                            <ProjectBox
-                                                type="Website Application"
-                                                title="Mathematical Challange Festival Web"
-                                                desc="a website for mathematical competition organized by Mathematics ITB, i worked as the front-end developer for the website."
-                                                stacks={["react"]}
-                                                image='img/projects/mcf.png'
-                                            ></ProjectBox>
-                                            <ProjectBox
-                                                type="Static Website"
-                                                title="Cov-idea Website"
-                                                desc="Cov-Idea is a website used to collect data from questionnaire about Covid-19 spread in Bandung by embedding Google Forms to the website."
-                                                stacks={["html", "css", "js"]}
-                                                image='img/projects/covidea.png'
-                                            ></ProjectBox>
-                                            <ProjectBox
-                                                type="Website Application"
-                                                title="Sorting Algorithm Visualizer"
-                                                desc="a Sorting algorithm visualizer built with HTML, CSS, and Javascript to visualize bubble sort, insertion sort, and selection sort."
-                                                stacks={["html", "css", "js"]}
-                                                image='img/projects/sorting-algo.png'
-                                            ></ProjectBox>
-                                        </div>
-                                    </Animator>
-                                    
-                                </div>
-                            </div>
-                        </ScrollPage>
-                        <div id="contact-me" className='contact-me'>
-                            <div className='contact-me-content'>
+                        <div id="works" className='works'>
+                            <div className='works-content'>
                                 <div className='title'> 
-                                        <h1>about <span>me</span></h1>
+                                        <h1>my <span>works</span></h1>
+                                    <div className='line-container'>
+                                        <div className='line-orange'></div>
+                                        <div className='line-red'></div>
+                                        <div className='line-green'></div>
+                                    </div>
                                 </div>
-                                    <div className='content'>
-                                        <h2>Interested in working together?</h2>
-                                        <p>need website or want to collaborate ? contact me by clicking the button below</p>
-                                        <a className='btn' href='mailto:felixzhuang12348@gmail.com'>contact me</a>
+                                    <div className='projects'>
+                                        <ProjectBox
+                                            type="Portfolio Website"
+                                            title="Joel Foo Portfolio Website"
+                                            desc="a portofolio website for a videographer and photographer based in Tangerang, Indonesia."
+                                            stacks={["react"]}
+                                            image='img/projects/joel.png'
+                                        ></ProjectBox>
+                                        <ProjectBox
+                                            type="Flutter App"
+                                            title="Buangin App"
+                                            desc="a prototype app to connect the community
+                                            and waster collectors for the process of buying and selling waste."
+                                            stacks={["flutter", "firebase"]}
+                                            image='img/projects/buangin.jpg'
+                                        ></ProjectBox>
+                                        <ProjectBox
+                                            type="Website Application"
+                                            title="Mathematical Challange Festival Web"
+                                            desc="a website for mathematical competition organized by Mathematics ITB, i worked as the front-end developer for the website."
+                                            stacks={["react"]}
+                                            image='img/projects/mcf.png'
+                                        ></ProjectBox>
+                                        <ProjectBox
+                                            type="Static Website"
+                                            title="Cov-idea Website"
+                                            desc="Cov-Idea is a website used to collect data from questionnaire about Covid-19 spread in Bandung by embedding Google Forms to the website."
+                                            stacks={["html", "css", "js"]}
+                                            image='img/projects/covidea.png'
+                                        ></ProjectBox>
+                                        <ProjectBox
+                                            type="Website Application"
+                                            title="Sorting Algorithm Visualizer"
+                                            desc="a Sorting algorithm visualizer built with HTML, CSS, and Javascript to visualize bubble sort, insertion sort, and selection sort."
+                                            stacks={["html", "css", "js"]}
+                                            image='img/projects/sorting-algo.png'
+                                        ></ProjectBox>
                                     </div>
                             </div>
                         </div>
+                        <div id="about-me" className='about-me'>
+                            <div className='about-me-content'>
+                                <div className='title'> 
+                                    <h1>about <span>me</span></h1>
+                                    <div className='line-container'>
+                                        <div className='line-green'></div>
+                                        <div className='line-orange'></div>
+                                        <div className='line-red'></div>
+                                    </div>
+                                </div>
+                                <div className='content'>
+                                    <div className='picture'>
+                                        <div className='color-fill'></div>
+                                        <img src='img/picture.png'></img>
+                                    </div>
+                                    <div className='desc'>
+                                        <h1>Hi, <span>I'm Felix Fernando</span>,</h1>
+                                        <p>a university student from a small town called Bintan, Kepulauan Riau that is currently studying Mathematics at the Faculty of Mathematics and Natural Sciences, Bandung Institute of Technology. </p>
+                                        <p>As a huge technology enthusiast since primary school, I've always been attracted to why and how computers work especially on the software side of things. But, why Mathematics? I believe that most algorithms or anything related to computers start from a mathematical equation, so with the basics in math, with that, I hope it can increase my pace in learning and be adaptive to technology progression because it's one of my goals to be proficient in both Mathematics and Computer Sciences.</p>
+                                    </div>
+                                </div>
+                                <div className='stacks'>
+                                    <h3>Programming Languange / Tech Stacks : </h3>
+                                    <div className='stacks-list'>
+                                        <SiPython></SiPython>
+                                        <SiHtml5></SiHtml5>
+                                        <SiCss3></SiCss3>
+                                        <SiJavascript></SiJavascript>
+                                        <SiReact></SiReact>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="contact-me" className='contact-me'>
+                            <div className='contact-me-content'>
+                                <div className='title'> 
+                                    <h1>contact <span>me</span></h1>
+                                    <div className='line-container'>
+                                        <div className='line-red'></div>
+                                        <div className='line-orange'></div>
+                                        <div className='line-green'></div>
+                                    </div>
+                                </div>
+                                <div className='content'>
+                                    <h2>Interested in working together?</h2>
+                                    <p>need website or want to collaborate ? contact me by clicking the button below</p>
+                                    <a className='btn' href='mailto:felixzhuang12348@gmail.com'>contact me</a>
+                                </div>
+                            </div>
+                        </div>
+                        <footer>
+                            <p>Developed and Designed by Felix Fernando</p>
+                        </footer>
                     </ScrollContainer>
                 </div>
             </div>
