@@ -14,9 +14,13 @@ header h3 {
 header .name {
     cursor: pointer;
 }
+header .name span {
+    cursor: pointer;
+    color: var(--red-accent);
+}
 header span {
     transition: 0.5s;
-    color: var(--orange-accent);
+    color: var(--green-accent);
 }
 header .nav-links {
     display: flex;

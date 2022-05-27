@@ -29,8 +29,15 @@
     opacity: .5;
 }
 .social-media-l a:hover {
-    color: var(--orange-accent);
     transition: 0.5s;
     opacity: 1;
 }
-
+.social-media-l a:hover:nth-child(1), .social-media-l a:hover:nth-child(4) {
+    color: var(--orange-accent);
+}
+.social-media-l a:hover:nth-child(2) {
+    color: var(--red-accent);
+}
+.social-media-l a:hover:nth-child(3) {
+    color: var(--green-accent);
+}

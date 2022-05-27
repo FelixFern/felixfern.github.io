@@ -3,6 +3,8 @@
 :root { 
     --bg-color: #0A192F;
     --orange-accent: #FF9315;
+    --red-accent: #FF3D3D;
+    --green-accent: #3DFF68;
 }
 
 html { 
@@ -36,15 +38,12 @@ p {
 }
 .navbar { 
     margin: auto;
-    position: absolute;
-    left: 11.5vw;
 }
 .content {
     width: 80vw;
     margin: auto;
 }
 /* Home */
-
 .home {
     height: 100vh;
 }
@@ -70,22 +69,161 @@ p {
 .home .btn {
     font-family: 'Source Sans Pro', sans-serif;
     transition: 0.5s;
-    border: 3px solid var(--orange-accent);
+    border: 3px solid var(--green-accent);
     text-decoration: none;
-    color : var(--orange-accent);
+    color : var(--green-accent);
     padding: 0.8% 2.5%;
     font-weight: 700;
 }
 .home .btn:hover {
     transition: 0.5s;
-    background-color: var(--orange-accent);
+    background-color: var(--green-accent);
     color: white;
     border-radius: 5px;
 }
 .home-content {
     position: absolute;
-    top: 45%;
+    top: 35%;
     transform: translateY(-50%);
+}
+.shapes { 
+    width: 80vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+.shapes > * {
+    transition: 0.5s;
+}
+.shapes > *:hover {
+    transition: 0.5s;
+    opacity: 0.2;
+}
+.shapes .square { 
+    animation: idle 8s ease-in-out infinite;
+    animation-delay: 0.5s;
+    position: absolute;
+    transform: rotate(15deg);
+    right: 25%;
+    top: 35%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--orange-accent);
+}
+.shapes .square-s { 
+    animation: idle1 6s ease-in-out infinite;
+    position: absolute;
+    transform: rotate(-25deg);
+    right: 30%;
+    top: 65%;
+    width: 80px;
+    height: 80px;
+    border: 5px solid var(--green-accent);
+}
+.shapes .triangle-s {
+    animation: idle2 4s ease-in-out infinite;
+    animation-delay: 1s;
+    position: absolute;
+    transform: scale(0.6) rotate(20deg);
+    right: 50%;
+    top: 45%;
+}
+.shapes .triangle {
+    animation: idle3 9s ease-in-out infinite;
+    animation-delay: 0.7s;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: scale(0.6) rotate(20deg);
+    stroke: 5px solid var(--green-accent);
+}
+.shapes .circle {
+    animation: idle4 8s ease-in-out infinite;
+    animation-delay: 0.5s;
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: var(--red-accent);
+}
+.shapes .circle-s {
+    animation: idle5 4s ease-in-out infinite;
+    animation-delay: 1.2s;
+    position: absolute;
+    right: 35%;
+    top: 10%;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 5px solid var(--orange-accent);
+}
+@keyframes idle {
+	0% {
+		transform: translatey(0px) rotate(15deg);;
+	}
+	50% {
+		transform: translatey(-30px) rotate(0deg);;
+	}
+	100% {
+		transform: translatey(0px) rotate(15deg);
+	}
+}
+@keyframes idle1 {
+	0% {
+		transform: translatey(0px) rotate(-25deg);
+	}
+	50% {
+		transform: translatey(-20px) rotate(-5deg);
+	}
+	100% {
+		transform: translatey(0px) rotate(-25deg);
+	}
+}
+@keyframes idle2 {
+	0% {
+		transform: translatey(0px) scale(0.6) rotate(20deg);
+	}
+	50% {
+		transform: translatey(-40px) scale(0.6) rotate(30deg);
+	}
+	100% {
+		transform: translatey(0px) scale(0.6) rotate(20deg);
+	}
+}
+@keyframes idle3 {
+	0% {
+		transform: translatey(0px) scale(0.6) rotate(20deg);
+	}
+	50% {
+		transform: translatey(-10px) scale(0.6) rotate(10deg);
+	}
+	100% {
+		transform: translatey(0px) scale(0.6) rotate(20deg);
+	}
+}
+@keyframes idle4 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-50px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes idle5 {
+	0% {
+		transform: translatey(0px) rotate(15deg);;
+	}
+	50% {
+		transform: translatey(-20px) rotate(5deg);;
+	}
+	100% {
+		transform: translatey(0px) rotate(15deg);
+	}
 }
 /* Works */
 .works {
@@ -136,6 +274,9 @@ p {
     .home .btn {
         padding: 1.5% 3%;
     }
+    .home-content {
+        top: 40%;
+    }
     .content {
         width: 76vw;
     }
@@ -149,6 +290,9 @@ p {
         height: 1.5px;
         width: 100%;
         margin-bottom: 20px;
+    }
+    .shapes {
+        opacity: .2;
     }
     /* Works */
     .projects {
