@@ -81,4 +81,15 @@
         height: 40vw;
         margin-bottom: 15px;
     }
+    .project-main-box h2 {
+        font-size: .7rem;
+    }
+    .project-main-box h3 {
+        font-size: .7rem;
+
+    }
+    .project-main-box p {
+        font-size: .7rem;
+        margin-top: 10px;
+    }
 }

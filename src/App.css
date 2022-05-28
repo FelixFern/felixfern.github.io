@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Source+Sans+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Source+Sans+Pro:wght@600&display=swap');
 
 :root { 
     --bg-color: #0A192F;
@@ -35,6 +35,16 @@ h1, h2, h3, h4 {
 p { 
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
+}
+/* Modal */
+.modal-parent {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+}
+.display-none {
+    display: none;
 }
 .main-container {
     width: 100vw;
@@ -389,9 +399,10 @@ footer {
     padding-bottom: 50px;
 }
 footer p {
+    font-family: 'Open Sans', sans-serif;
     position: absolute;
     transform: translate(-50%, -10%);
-
+    font-weight: 100;
     margin: auto;
 }
 @media only screen and (max-width: 800px) {
@@ -407,6 +418,9 @@ footer p {
     }
     .home-content {
         top: 40%;
+    }
+    .home-content h1 {
+        line-height: 35px;
     }
     .content {
         width: 76vw;
@@ -430,20 +444,20 @@ footer p {
         display: block;
     }
     /* About Me*/
-
     .about-me .content {
         display: block;
         text-align: center;
     }
-    .about-me .picture img{
+    .about-me .picture img {
         text-align: center;
         margin: auto;
     }
     .about-me .picture .color-fill {
-        width: 40vw;
-        height: 40vw;
         transform: translate(50%,0);
         right: 50%;
+    }
+    .about-me .desc {
+        margin-top: 20px;
     }
     .about-me .stacks {
         text-align: center;

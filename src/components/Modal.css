@@ -1,0 +1,36 @@
+.modal-box {
+    position: absolute;
+    width: 30vw;
+    height: 80vh;
+    border-radius: 10px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    opacity: .8;
+}
+.close-button h2 {
+    position: absolute;
+    transition: 0.5s;
+    right: 5%;
+    font-size: 20px;
+    color: var(--orange-accent);
+    cursor: pointer;
+}
+.close-button h2:hover {
+    transition: 0.5s;
+    color: var(--red-accent);
+    opacity: .5;
+}
+.modal-box h3 {
+    color: black;
+}
+.modal-box p {
+    color: black;
+}

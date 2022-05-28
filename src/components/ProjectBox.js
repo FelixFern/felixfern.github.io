@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import './ProjectBox.css'
 import {SiReact, SiFigma, SiJavascript, SiFlutter, SiFirebase, SiHtml5, SiCss3} from 'react-icons/si'
+import { ModalContext } from '../context/global'
 
 function ProjectBox(props) {
     let stacks = props.stacks
-    console.log(stacks)
+    const {ModalToggle, setModalToggle} = useContext(ModalContext)
     return (
-        <div className='project-main-box'>
+        <div className='project-main-box' onClick={
+            () => {
+                setModalToggle({show: true, title:props.title})
+                console.log(ModalToggle)
+            }
+        }>
             <div className='color-fill'></div>
             <img className='bg-image' src={(props.image)} alt={props.title}></img>
             <div className='content'>
@@ -15,7 +21,6 @@ function ProjectBox(props) {
                     <div className='stacks'>
                         {stacks.map((stack,key) => {
                             if(stack == "react") {
-                                console.log(stack)
                                 return (<SiReact className='stack-icon'></SiReact>)
                             } else if(stack == "figma") {
                                 return (<SiFigma className='stack-icon'></SiFigma>)
