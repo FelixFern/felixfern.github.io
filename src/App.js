@@ -115,7 +115,7 @@ function App() {
                                         </div>
                                 </div>
                             </div>
-                            <div id="about-me" className='about-me'>
+                            <div id="about" className='about-me'>
                                 <div className='about-me-content'>
                                     <div className='title'> 
                                         <h1>about <span>me</span></h1>
@@ -148,7 +148,7 @@ function App() {
                                     </div>
                                 </div>
                             </div>
-                            <div id="contact-me" className='contact-me'>
+                            <div id="contact" className='contact-me'>
                                 <div className='contact-me-content'>
                                     <div className='title'> 
                                         <h1>contact <span>me</span></h1>
