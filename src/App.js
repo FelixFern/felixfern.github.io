@@ -22,7 +22,7 @@ function App() {
                 <div className='social-media'>
                     <SocialMedia></SocialMedia>
                 </div>
-                <div className={ModalToggle.show ?'modal-parent' : 'modal-parent display-none'}>
+                <div className={ModalToggle.show ?'modal-parent' : 'modal-parent m-display-none'}>
                     <Modal 
                         title={ModalToggle.title}>
                     </Modal>

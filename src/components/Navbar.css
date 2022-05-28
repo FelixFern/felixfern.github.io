@@ -134,8 +134,8 @@ header .nav-links .links h3:hover, .btn-orange{
         text-align: right;
         right: 8vw;
         flex-direction: column;
-        padding-top: 50px;
-        z-index: 99;
+        transform: translateY(50px);
+        z-index: 100;
     }
     .links {
         transform: translateX(50%);

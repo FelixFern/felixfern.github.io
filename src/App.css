@@ -43,7 +43,7 @@ p {
     height: 100vh;
     z-index: 100;
 }
-.display-none {
+.m-display-none {
     display: none;
 }
 .main-container {
