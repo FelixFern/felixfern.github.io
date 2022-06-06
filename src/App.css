@@ -105,11 +105,11 @@ p {
 }
 .home-content {
     position: absolute;
-    top: 35%;
-    z-index: 99;
+    top: 45%;
     transform: translateY(-50%);
 }
 .shapes { 
+    z-index: 99;
     width: 80vw;
     height: 100vh;
     position: absolute;
@@ -220,7 +220,7 @@ p {
 		transform: translatey(0px) scale(0.6) rotate(20deg);
 	}
 	50% {
-		transform: translatey(-10px) scale(0.6) rotate(10deg);
+		transform: translatey(-40px) scale(0.6) rotate(-20deg);
 	}
 	100% {
 		transform: translatey(0px) scale(0.6) rotate(20deg);
