@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, MoveIn, MoveOut, ZoomOut, FadeOut} from "react-scroll-motion";
 import {SiReact, SiJavascript, SiHtml5, SiCss3, SiPython} from 'react-icons/si'
 import './App.css';
 
@@ -8,6 +7,7 @@ import ProjectBox from './components/ProjectBox';
 import SocialMedia from './components/SocialMedia';
 import { ModalContext } from './context/global';
 import Modal from './components/Modal';
+import FeaturedProject from './components/FeaturedProject';
 
 function App() {
     const [ModalToggle, setModalToggle] = useState([])
@@ -16,8 +16,7 @@ function App() {
     const handleScroll = () => setYOffset(window.scrollY)
 
     useEffect(() => {
-        document.title = "Felix Fernando's Portfolio"
-        console.log(ModalToggle)
+        document.title = "Felix Fernando's Portofolio"
         setModalToggle({show: false, title: '' }, []);
 
         window.addEventListener('scroll', handleScroll, { passive: true})
@@ -42,9 +41,9 @@ function App() {
                     <div className='content'>
                         <div id="home" className='home'>
                             <div className='home-content'>
-                                <h4 style={{ transform: `translateX(-${yOffset * 0.5}px)`, opacity: `${1 - yOffset * 0.005}` }} >Hi, my name is</h4>
-                                <h1 style={{ transform: `translateX(-${yOffset * 0.4}px)`, opacity: `${1 - yOffset * 0.003}` }}>Felix Fernando</h1> 
-                                <p style={{ transform: `translateX(-${yOffset * 0.55}px)`, opacity: `${1 - yOffset * 0.004}` }} className='home-desc'>i’m currently a student studying Mathematics at Bandung Institute of Technology with huge interest in frontend development and UI/UX design. </p>
+                                <h4 style={{ transform: `translateX(-${yOffset * 0.3}px)`, opacity: `${1 - yOffset * 0.005}` }} >Hi, my name is</h4>
+                                <h1 style={{ transform: `translateX(-${yOffset * 0.2}px)`, opacity: `${1 - yOffset * 0.003}` }}>Felix Fernando</h1> 
+                                <p style={{ transform: `translateX(-${yOffset * 0.25}px)`, opacity: `${1 - yOffset * 0.004}` }} className='home-desc'>i’m currently a student studying Mathematics at Bandung Institute of Technology with huge interest in frontend development and UI/UX design. </p>
                                 <a style={{ opacity: `${1 - yOffset * 0.005}` }} href='#works' className='btn'>check out my work</a>
                             </div>
                             <div className='shapes' style={{ transform: `translateX(${yOffset * 0.2}px)`}}>
@@ -63,13 +62,29 @@ function App() {
                     <div id="works" className='works'>
                         <div className='works-content'>
                             <div className='title'> 
-                                    <h1>my <span>works</span></h1>
-                                <div className='line-container'>
-                                    <div className='line-orange'></div>
-                                    <div className='line-red'></div>
-                                    <div className='line-green'></div>
-                                </div>
+                                <h1>my <span>projects</span></h1>
+                                <p>Most of the project i've worked on</p>
                             </div>
+                                <div className='featured-projects'>
+                                    <FeaturedProject
+                                        title="Wordle Recreated"
+                                        subtitle="Portofolio Website"
+                                        desc="Wordle is a famous word guessing game created by Josh Wordle. in this project, the game is recreated using react javascript local storage."
+                                        stacks={['React', 'Javascript', 'HTML', 'CSS', 'JS']}
+                                        images={['./img/projects/wordle/wordle-1.png', './img/projects/wordle/wordle-2.png']}
+                                        repo={'https://github.com/FelixFern/Wordle-React'}
+                                        project={'https://felixfern.github.io/Wordle-React/'}
+                                    ></FeaturedProject>
+                                    <FeaturedProject
+                                        title="Joel Foo's Portofolio Website"
+                                        subtitle="Portofolio Website"
+                                        desc="a Portofolio website built for a videographer and filmographer based on Tangerang,Joel Foo. This website is built with Strapi as the CMS, React as the frontend, and designed with Figma."
+                                        stacks={['React', 'Strapi', 'HTML', 'CSS', 'JS', 'Figma']}
+                                        images={['./img/projects/joel/joel-1.png']}
+                                        repo={'https://github.com/FelixFern/Joel-Portofolio'}
+                                        project={'https://joelfoofoo.netlify.app/'}
+                                    ></FeaturedProject>
+                                </div>
                                 <div className='projects'>
                                     
                                 </div>

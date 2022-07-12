@@ -1,0 +1,105 @@
+.featured-project-parent {
+    display: flex;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+.featured-project-parent:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+.featured-project-parent .header {
+    width: 31vw;
+    padding-right: calc(10% + 4px);
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--green-accent);
+}
+.featured-project-parent .header > * {
+    margin: 0px;
+}
+.featured-project-parent .header h3 {
+    color: var(--green-accent);
+}
+.featured-project-parent p {
+    width: 31vw;
+    padding: 5%;
+    margin-bottom: 0;
+    border: 2px solid var(--green-accent);
+}
+.featured-project-parent .stacks {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+.featured-project-parent .stacks h3 { 
+    margin-right: 10px;
+}
+.featured-project-parent .stacks .stack-icon {
+    margin-right: 8px;
+    font-size: 22px;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.featured-project-parent .stacks .stack-icon:nth-child(2n-1) {
+    background-color: var(--green-accent);
+}
+.featured-project-parent .stacks .stack-icon:nth-child(2n) {
+    background-color: var(--red-accent);
+}
+.featured-project-parent .stacks .stack-icon:nth-child(3n) {
+    background-color: var(--orange-accent);
+}
+.featured-project-parent .links{
+    display: flex;
+    column-gap: 20px;
+}
+.featured-project-parent .links a {
+    text-decoration: none;
+}
+.featured-project-parent .links a:nth-child(1) h3 {
+    transition: 0.5s;
+    color: var(--orange-accent);
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--orange-accent);
+}
+.featured-project-parent .links a:nth-child(2) h3{
+    transition: 0.5s;
+    color: var(--red-accent);
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--red-accent);
+}
+.featured-project-parent .links a:hover h3 {
+    transition: 0.5s;
+    opacity: .8;
+}
+
+.featured-project-parent .left{
+    width: calc(31vw + 5%);
+}
+.featured-project-parent .right{
+    width: fit-content;
+}
+
+@media only screen and (max-width: 800px) {
+    .featured-project-parent {
+        display : flex;
+        flex-direction: column-reverse;
+        row-gap: 20px;
+    }
+    .featured-project-parent .header {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 20px;
+        border-bottom: 2px solid var(--green-accent);
+    }
+    .featured-project-parent p {
+        width: 88%;
+        padding: calc(6% - 2px);
+        margin-bottom: 0;
+        border: 2px solid var(--green-accent);
+    }
+    .featured-project-parent .links {
+        position: absolute;
+        left: 0;
+    }
+}

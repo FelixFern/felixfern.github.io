@@ -255,6 +255,15 @@ p {
 }
 .works-content {
     width: 100%;
+    margin: auto;
+}
+.works-content .title {
+    margin-bottom: 30px;
+}
+.works-content .title > * {
+    margin: auto;
+    text-align: center;
+    line-height: 150%;
 }
 .title {
     width: 100%;
@@ -293,13 +302,6 @@ p {
 }
 .title .line-green {
     background-color: var(--green-accent);
-}
-.projects {
-    margin-bottom: 100px;
-    display: grid;
-    gap: 10px;
-    margin: auto;
-    grid-template-columns: auto auto auto;
 }
 .parent {
     height: fit-content;
@@ -440,9 +442,7 @@ footer p {
         opacity: .2;
     }
     /* Works */
-    .projects {
-        display: block;
-    }
+
     /* About Me*/
     .about-me .content {
         display: block;

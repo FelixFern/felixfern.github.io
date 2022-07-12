@@ -1,0 +1,46 @@
+.carousel-parent {
+    width: 43vw;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.images-list {
+    display: flex;
+    overflow: hidden;
+}
+.images-list img {
+    transition: 0.5s;
+    transform: translateX(43vw);
+    width: 100%;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+}
+.thumb {
+    position: absolute;
+    width: 95%;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+}
+.thumb h1 {
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
+}
+.thumb h1:hover {
+    transition: 0.5s;
+    color: var(--orange-accent);
+}
+
+@media only screen and (max-width: 800px) {
+    .carousel-parent {
+        width: 80vw;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .thumb {
+        display: none;
+    }
+}
