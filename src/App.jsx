@@ -68,7 +68,7 @@ function App() {
                                 <div className='featured-projects'>
                                     <FeaturedProject
                                         title="Wordle Recreated"
-                                        subtitle="Portofolio Website"
+                                        subtitle="Web Application"
                                         desc="Wordle is a famous word guessing game created by Josh Wordle. in this project, the game is recreated using react javascript local storage."
                                         stacks={['React', 'Javascript', 'HTML', 'CSS', 'JS']}
                                         images={['./img/projects/wordle/wordle-1.png', './img/projects/wordle/wordle-2.png']}
