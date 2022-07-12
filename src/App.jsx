@@ -11,11 +11,19 @@ import Modal from './components/Modal';
 
 function App() {
     const [ModalToggle, setModalToggle] = useState([])
+    const [ yOffset, setYOffset] = useState() 
+
+    const handleScroll = () => setYOffset(window.scrollY)
+
     useEffect(() => {
         document.title = "Felix Fernando's Portfolio"
         console.log(ModalToggle)
         setModalToggle({show: false, title: '' }, []);
+
+        window.addEventListener('scroll', handleScroll, { passive: true})
+        return () => window.removeEventListener('scroll', handleScroll)
     }, [])
+    
     return (
         <ModalContext.Provider value={{ModalToggle, setModalToggle}}>
             <div className='main-container'>
@@ -34,12 +42,12 @@ function App() {
                     <div className='content'>
                         <div id="home" className='home'>
                             <div className='home-content'>
-                                <h4>Hi, my name is</h4>
-                                <h1>Felix Fernando</h1> 
-                                <p className='home-desc'>i’m currently a student studying Mathematics at Bandung Institute of Technology with huge interest in frontend development and UI/UX design. </p>
-                                <a href='#works' className='btn'>check out my work</a>
+                                <h4 style={{ transform: `translateX(-${yOffset * 0.5}px)`, opacity: `${1 - yOffset * 0.005}` }} >Hi, my name is</h4>
+                                <h1 style={{ transform: `translateX(-${yOffset * 0.4}px)`, opacity: `${1 - yOffset * 0.003}` }}>Felix Fernando</h1> 
+                                <p style={{ transform: `translateX(-${yOffset * 0.55}px)`, opacity: `${1 - yOffset * 0.004}` }} className='home-desc'>i’m currently a student studying Mathematics at Bandung Institute of Technology with huge interest in frontend development and UI/UX design. </p>
+                                <a style={{ opacity: `${1 - yOffset * 0.005}` }} href='#works' className='btn'>check out my work</a>
                             </div>
-                            <div className='shapes'>
+                            <div className='shapes' style={{ transform: `translateX(${yOffset * 0.2}px)`}}>
                                 <div className='square'></div>
                                 <div className='square-s'></div>
                                 <svg className='triangle-s' width="87" height="76" viewBox="0 0 87 76" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,42 +71,7 @@ function App() {
                                 </div>
                             </div>
                                 <div className='projects'>
-                                    <ProjectBox
-                                        type="Portfolio Website"
-                                        title="Joel Foo Portfolio Website"
-                                        desc="a portofolio website for a videographer and photographer based in Tangerang, Indonesia."
-                                        stacks={["react", "strapi"]}
-                                        image='img/projects/joel.png'
-                                    ></ProjectBox>
-                                    <ProjectBox
-                                        type="Flutter App"
-                                        title="Buangin App"
-                                        desc="a prototype app to connect the community
-                                        and waster collectors for the process of buying and selling waste."
-                                        stacks={["flutter", "firebase"]}
-                                        image='img/projects/buangin.jpg'
-                                    ></ProjectBox>
-                                    <ProjectBox
-                                        type="Website Application"
-                                        title="Mathematical Challange Festival Web"
-                                        desc="a website for mathematical competition organized by Mathematics ITB, i worked as the front-end developer for the website."
-                                        stacks={["react"]}
-                                        image='img/projects/mcf.png'
-                                    ></ProjectBox>
-                                    <ProjectBox
-                                        type="Static Website"
-                                        title="Cov-idea Website"
-                                        desc="Cov-Idea is a website used to collect data from questionnaire about Covid-19 spread in Bandung by embedding Google Forms to the website."
-                                        stacks={["html", "css", "js"]}
-                                        image='img/projects/covidea.png'
-                                    ></ProjectBox>
-                                    <ProjectBox
-                                        type="Website Application"
-                                        title="Sorting Algorithm Visualizer"
-                                        desc="a Sorting algorithm visualizer built with HTML, CSS, and Javascript to visualize bubble sort, insertion sort, and selection sort."
-                                        stacks={["html", "css", "js"]}
-                                        image='img/projects/sorting-algo.png'
-                                    ></ProjectBox>
+                                    
                                 </div>
                         </div>
                     </div>
