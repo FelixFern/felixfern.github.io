@@ -14,7 +14,7 @@ function FeaturedProject({ title, subtitle, desc, stacks, images, repo, project 
     }, [])
     
     return (
-        <div className='featured-project-parent' data-aos='fade-left'>
+        <div className='featured-project-parent' data-aos='zoom-in-right'>
             <div className='left'>
                 <div className="header">
                     <h1>{title}</h1>
@@ -24,17 +24,16 @@ function FeaturedProject({ title, subtitle, desc, stacks, images, repo, project 
                 <div className="stacks">
                     <h3>Technology Used : </h3>
                     {stacks.map((stack, key) => {
-                        if(stack.toLowerCase() == "react") return (
-                        <SiReact className='stack-icon'></SiReact>)
-                        else if(stack.toLowerCase() == "figma") return (<SiFigma className='stack-icon'></SiFigma>)
-                        else if(stack.toLowerCase() == "flutter") return (<SiFlutter className='stack-icon'></SiFlutter>)
-                        else if(stack.toLowerCase() == "firebase") return (<SiFirebase className='stack-icon'></SiFirebase>)
-                        else if(stack.toLowerCase() == "js") return (<SiJavascript className='stack-icon'></SiJavascript>)
-                        else if(stack.toLowerCase() == "html") return (<SiHtml5 className='stack-icon'></SiHtml5>)
-                        else if(stack.toLowerCase() == "css") return (<SiCss3 className='stack-icon'></SiCss3>)
-                        else if(stack.toLowerCase() == "strapi") return (<SiStrapi className='stack-icon'></SiStrapi>)
-                        else if(stack.toLowerCase() == "node") return (<SiNodedotjs className='stack-icon'></SiNodedotjs>)
-                        else if(stack.toLowerCase() == "express") return (<SiExpress className='stack-icon'></SiExpress>)
+                        if(stack.toLowerCase() == "react") return (<SiReact key={key} className='stack-icon'></SiReact>)
+                        else if(stack.toLowerCase() == "figma") return (<SiFigma key={key} className='stack-icon'></SiFigma>)
+                        else if(stack.toLowerCase() == "flutter") return (<SiFlutter key={key} className='stack-icon'></SiFlutter>)
+                        else if(stack.toLowerCase() == "firebase") return (<SiFirebase key={key} className='stack-icon'></SiFirebase>)
+                        else if(stack.toLowerCase() == "js") return (<SiJavascript key={key} className='stack-icon'></SiJavascript>)
+                        else if(stack.toLowerCase() == "html") return (<SiHtml5 key={key} className='stack-icon'></SiHtml5>)
+                        else if(stack.toLowerCase() == "css") return (<SiCss3 key={key} className='stack-icon'></SiCss3>)
+                        else if(stack.toLowerCase() == "strapi") return (<SiStrapi key={key} className='stack-icon'></SiStrapi>)
+                        else if(stack.toLowerCase() == "node") return (<SiNodedotjs key={key} className='stack-icon'></SiNodedotjs>)
+                        else if(stack.toLowerCase() == "express") return (<SiExpress key={key} className='stack-icon'></SiExpress>)
                     })}
                 </div>
                 <div className='links'>

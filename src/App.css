@@ -269,7 +269,7 @@ p {
     color: var(--red-accent);
 }
 .projects {
-    margin-bottom: 100px;
+    margin-bottom: 120px;
     display: grid;
     gap: 10px;
     margin: auto;
@@ -318,7 +318,7 @@ p {
 }
 /* About Me */
 .about-me {
-    margin-top: 100px;
+    margin-top: 150px;
     height: fit-content;
 }
 .about-me .about-me-content .title span {

@@ -7,7 +7,6 @@ function Navbar() {
         <header>
             <h3 className='name'>felix<span>fernando.</span></h3>
             <div className='hamburger' onClick={() => {
-                console.log(hamburger)
                 if(hamburger) {
                     setHamburger(false)
                 } else {

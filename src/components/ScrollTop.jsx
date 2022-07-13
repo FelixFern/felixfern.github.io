@@ -16,6 +16,7 @@ function ScrollTop() {
     useEffect(() => {
         yOffset == 0 ? setShowButton(false) : setShowButton(true) 
     }, [yOffset])
+    
     return (
         <div className={showButton ? "scroll-top-parent show" : "scroll-top-parent hide"} onClick={() => scrollTop()}>
             <FaArrowUp className={showButton ? "icon show" : "icon hide"}></FaArrowUp>

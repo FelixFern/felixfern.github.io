@@ -1,7 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { SiReact, SiJavascript, SiHtml5, SiCss3, SiPython } from 'react-icons/si'
-import './App.css';
 import AOS from 'aos';
+
+import './App.css';
+import 'aos/dist/aos.css';
 
 import Navbar from './components/Navbar';
 import ProjectBox from './components/ProjectBox';
@@ -12,16 +14,14 @@ import ScrollTop from './components/ScrollTop';
 
 function App() {
     const [ yOffset, setYOffset ] = useState() 
-
     const handleScroll = () => setYOffset(window.scrollY)
-
     useEffect(() => {
         document.title = "Felix Fernando's Portofolio"
         AOS.init()
         window.addEventListener('scroll', handleScroll, { passive: true})
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
-    
+
     return (
         <yOffsetContext.Provider value={{ yOffset, setYOffset }}>
             <div className='main-container'>
@@ -56,13 +56,12 @@ function App() {
                         </div>
                     <div id="works" className='works'>
                         <div className='works-content'>
-                            <div className='title' data-aos='fade-left'> 
-                                <h1>my <span>projects</span></h1>
-                                <p>Most of the project i've worked on</p>
+                            <div className='title'> 
+                                <h1 data-aos='fade'>my <span>projects</span></h1>
+                                <p data-aos='fade-up'>Most of the project i've worked on</p>
                             </div>
                             <div className='featured-projects'>
                                 <FeaturedProject
-                                    data-aos="fade"
                                     title="SSK Interior Design"
                                     subtitle="Portofolio Website"
                                     desc="a fully responsive portofolio website created for Sinar Surya Kontrarindo. This project is built with React as the frontend and ExpressJS as the backend, this project utilise ExpressJS to crawl the folder project to access the portofolio by folder. This website project is designed in Figma."
@@ -146,27 +145,27 @@ function App() {
                     <div id="about" className='about-me'>
                         <div className='about-me-content'>
                             <div className='title'> 
-                                <h1>about <span>me</span></h1>
-                                <div className='line-container'>
+                                <h1 data-aos='fade-right'>about <span>me</span></h1>
+                                <div className='line-container' data-aos='fade-up'>
                                     <div className='line-green'></div>
                                     <div className='line-orange'></div>
                                     <div className='line-red'></div>
                                 </div>
                             </div>
                             <div className='content'>
-                                <div className='picture'>
+                                <div className='picture' data-aos='fade'>
                                     <div className='color-fill'></div>
                                     <img src='img/picture.png'></img>
                                 </div>
                                 <div className='desc'>
-                                    <h1>Hi, <span>I'm Felix Fernando</span>,</h1>
-                                    <p>a university student from a small town called Bintan, Kepulauan Riau that is currently studying Mathematics at the Faculty of Mathematics and Natural Sciences, Bandung Institute of Technology. </p>
-                                    <p>As a huge technology enthusiast since primary school, I've always been attracted to why and how computers work especially on the software side of things. But, why Mathematics? I believe that most algorithms or anything related to computers start from a mathematical equation, so with the basics in math, with that, I hope it can increase my pace in learning and be adaptive to technology progression because it's one of my goals to be proficient in both Mathematics and Computer Sciences.</p>
+                                    <h1 data-aos='fade-left'>Hi, <span>I'm Felix Fernando</span>,</h1>
+                                    <p data-aos='fade-left'>a university student from a small town called Bintan, Kepulauan Riau that is currently studying Mathematics at the Faculty of Mathematics and Natural Sciences, Bandung Institute of Technology. </p>
+                                    <p data-aos='fade-left'>As a huge technology enthusiast since primary school, I've always been attracted to why and how computers work especially on the software side of things. But, why Mathematics? I believe that most algorithms or anything related to computers start from a mathematical equation, so with the basics in math, with that, I hope it can increase my pace in learning and be adaptive to technology progression because it's one of my goals to be proficient in both Mathematics and Computer Sciences.</p>
                                 </div>
                             </div>
                             <div className='stacks'>
-                                <h3>Programming Languange / Tech Stacks : </h3>
-                                <div className='stacks-list'>
+                                <h3 data-aos="fade">Programming Languange / Tech Stacks : </h3>
+                                <div className='stacks-list' data-aos='fade-left'>
                                     <SiPython></SiPython>
                                     <SiHtml5></SiHtml5>
                                     <SiCss3></SiCss3>
@@ -179,14 +178,14 @@ function App() {
                     <div id="contact" className='contact-me'>
                         <div className='contact-me-content'>
                             <div className='title'> 
-                                <h1>contact <span>me</span></h1>
-                                <div className='line-container'>
+                                <h1 data-aos='fade-right'>contact <span>me</span></h1>
+                                <div className='line-container' data-aos='fade-up'>
                                     <div className='line-red'></div>
                                     <div className='line-orange'></div>
                                     <div className='line-green'></div>
                                 </div>
                             </div>
-                            <div className='content'>
+                            <div className='content' data-aos='fade-left'>
                                 <h2>Interested in working together?</h2>
                                 <p>need website or want to collaborate ? contact me by clicking the button below</p>
                                 <a className='btn' href='mailto:felixzhuang12348@gmail.com'>contact me</a>
