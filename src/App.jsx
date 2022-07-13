@@ -73,7 +73,7 @@ function App() {
                                 <FeaturedProject
                                     title="Wordle Recreated"
                                     subtitle="Web Application"
-                                    desc="Wordle is a famous word guessing game created by Josh Wordle. in this project, the game is recreated using react javascript local storage."
+                                    desc="Wordle is a famous word guessing game created by Josh Wordle. in this project, the game is recreated using react with javascript local storage."
                                     stacks={['React']}
                                     images={['./img/projects/wordle/wordle-1.png', './img/projects/wordle/wordle-2.png']}
                                     repo={'https://github.com/FelixFern/Wordle-React'}
@@ -89,7 +89,7 @@ function App() {
                                     project={'https://joelfoofoo.netlify.app/'}
                                 ></FeaturedProject>
                             </div>
-                            <h2>other <span>works</span></h2>
+                            <h2 data-aos="fade-right">other <span>works</span></h2>
                             <div className='projects'>
                                 <ProjectBox
                                     type="Web Application"
