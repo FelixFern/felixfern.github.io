@@ -2,22 +2,10 @@
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    width: 100%;
+    width: calc(100% - 3px);
     height: 13vw;
 }
-.project-main-box .color-fill {
-    transition: 0.5s;
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bg-color);
-    opacity: 0;
-}
-.project-main-box:hover .color-fill {
-    transition: 0.5s;
-    opacity: 0.85;
-}
+
 .project-main-box .bg-image{
     z-index: -2;
     position: absolute;
@@ -26,7 +14,6 @@
     object-fit: cover;
 }
 .project-main-box .content {
-    opacity: 0;
     transition: 0.8s;
     position: absolute;
     top: 50%;
@@ -34,12 +21,6 @@
     transform: translate(-50%, -50%);
     width: 80%;
     height: fit-content;
-}
-
-.project-main-box:hover .content {
-    transition: 0.8s;
-    display: block;
-    opacity: 1;
 }
 
 .project-main-box .head {
@@ -55,13 +36,12 @@
 .project-main-box h3 {
     font-size: 1rem;
     margin: 0;
-    color: var(--orange-accent);
 }
 .project-main-box p {
     font-size: 1rem;
     margin: 0;
     margin-top: 20px;
-    width: 80%;
+    width: 100%;
 }
 .project-main-box .stack-icon:nth-child(odd) {
     color: var(--orange-accent);
@@ -73,7 +53,44 @@
     font-size: 1.25rem;
     margin-left: 10px;
 }
+.project-main-box .links {
+    display: flex;
+    column-gap: 15px;
+    margin-top: 15px;
+}
+.project-main-box .links a {
+    transition: 0.5s;
+    text-decoration: none;
+}
+.project-main-box .links h3 {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 1rem;
+}
+.project-main-box .links a:hover {
+    transition: 0.5s;
+    opacity: .5;
+}
 
+.green {
+    border: 1.5px solid var(--green-accent);
+}
+.green h3 {
+    color: var(--green-accent);
+}
+.red {
+    border: 1.5px solid var(--red-accent);
+}
+.red h3 {
+    color: var(--red-accent);
+}
+.orange {
+    border: 1.5px solid var(--orange-accent);
+}
+.orange h3 {
+    color: var(--orange-accent);
+}
 @media only screen and (max-width: 800px) {
     .project-main-box {
         position: relative;
@@ -82,14 +99,17 @@
         margin-bottom: 15px;
     }
     .project-main-box h2 {
-        font-size: .7rem;
+        font-size: 1rem;
     }
     .project-main-box h3 {
-        font-size: .7rem;
+        font-size: 1rem;
 
     }
     .project-main-box p {
-        font-size: .7rem;
+        font-size: 1rem;
         margin-top: 10px;
+    }
+    .project-main-box .links {
+        transform: translate(0);
     }
 }

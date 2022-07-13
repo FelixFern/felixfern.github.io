@@ -1,0 +1,36 @@
+.scroll-top-parent {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    background-color: var(--orange-accent);
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    bottom: 5%;
+    right: 4%;
+    cursor: pointer;
+}
+.icon {
+    color: white;
+}
+.show {
+    transition: 0.3s;
+    transform: scale(1) rotate(0deg);
+}
+.hide {
+    transition: 0.3s;
+    transform: scale(0) rotate(360deg);
+}
+.scroll-top-parent:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+    cursor: pointer;
+    opacity: .8;
+}
+@media only screen and (max-width: 800px) {
+    .scroll-top-parent {
+        right: 8%;
+    }
+}

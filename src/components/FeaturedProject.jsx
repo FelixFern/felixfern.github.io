@@ -1,12 +1,20 @@
 import React from 'react'
-import {SiReact, SiFigma, SiJavascript, SiFlutter, SiFirebase, SiHtml5, SiCss3, SiStrapi} from 'react-icons/si'
+import { SiReact, SiFigma, SiJavascript, SiFlutter, SiFirebase, SiHtml5, SiCss3, SiStrapi, SiNodedotjs, SiExpress, SiGithub } from 'react-icons/si'
+import { BiLinkExternal } from 'react-icons/bi'
+import AOS from 'aos';
+
 import Carousel from './Carousel'
 import './FeaturedProject.css'
+import { useEffect } from 'react';
 
 
 function FeaturedProject({ title, subtitle, desc, stacks, images, repo, project }) {
+    useEffect(() => {
+        AOS.init()
+    }, [])
+    
     return (
-        <div className='featured-project-parent'>
+        <div className='featured-project-parent' data-aos='fade-left'>
             <div className='left'>
                 <div className="header">
                     <h1>{title}</h1>
@@ -25,11 +33,23 @@ function FeaturedProject({ title, subtitle, desc, stacks, images, repo, project 
                         else if(stack.toLowerCase() == "html") return (<SiHtml5 className='stack-icon'></SiHtml5>)
                         else if(stack.toLowerCase() == "css") return (<SiCss3 className='stack-icon'></SiCss3>)
                         else if(stack.toLowerCase() == "strapi") return (<SiStrapi className='stack-icon'></SiStrapi>)
+                        else if(stack.toLowerCase() == "node") return (<SiNodedotjs className='stack-icon'></SiNodedotjs>)
+                        else if(stack.toLowerCase() == "express") return (<SiExpress className='stack-icon'></SiExpress>)
                     })}
                 </div>
                 <div className='links'>
-                    <a href={repo}><h3>Repository</h3></a>
-                    <a href={project}><h3>Project</h3></a>
+                    {repo !== '' ? (
+                        <>
+                        <a href={repo}><h3><SiGithub></SiGithub>Repository</h3></a>
+                        </>
+                    ):(
+                        <></>
+                    )}
+                    {project !== '' ? (
+                        <a href={project}><h3><BiLinkExternal></BiLinkExternal>Project</h3></a>
+                    ) : (
+                        <></>
+                    )}
                 </div>
             </div>
             <div className='right'>

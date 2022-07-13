@@ -265,6 +265,16 @@ p {
     text-align: center;
     line-height: 150%;
 }
+.works-content h2 span {
+    color: var(--red-accent);
+}
+.projects {
+    margin-bottom: 100px;
+    display: grid;
+    gap: 10px;
+    margin: auto;
+    grid-template-columns: auto auto auto;
+}
 .title {
     width: 100%;
     margin-top: 30px;
@@ -444,6 +454,9 @@ footer p {
     /* Works */
     .works-content .title h1 {
         padding: 0;
+    }
+    .projects {
+        display: block;
     }
     /* About Me*/
     .about-me .content {
