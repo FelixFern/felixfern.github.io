@@ -419,13 +419,13 @@ footer p {
         padding: 1.5% 3%;
     }
     .home-content {
-        top: 40%;
+        top: 50%;
     }
     .home-content h1 {
         line-height: 35px;
     }
     .content {
-        width: 76vw;
+        width: 80vw;
     }
     .title{
         display: block;
@@ -442,7 +442,9 @@ footer p {
         opacity: .2;
     }
     /* Works */
-
+    .works-content .title h1 {
+        padding: 0;
+    }
     /* About Me*/
     .about-me .content {
         display: block;

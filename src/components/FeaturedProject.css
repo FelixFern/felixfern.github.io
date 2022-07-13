@@ -85,21 +85,30 @@
         display : flex;
         flex-direction: column-reverse;
         row-gap: 20px;
+        margin-bottom: 20px;
+    }
+    .featured-project-parent:nth-child(2n) {
+        flex-direction: column-reverse;
     }
     .featured-project-parent .header {
-        width: 100%;
+        width: 80vw;
         padding-right: 0;
         padding-bottom: 20px;
         border-bottom: 2px solid var(--green-accent);
     }
     .featured-project-parent p {
-        width: 88%;
-        padding: calc(6% - 2px);
+        width: 76vw;
+        padding: calc(2vw - 2px);
         margin-bottom: 0;
         border: 2px solid var(--green-accent);
     }
+    .featured-project-parent .stacks { 
+        display: block;
+    }
     .featured-project-parent .links {
-        position: absolute;
-        left: 0;
+        transform: translate(0);
+    }
+    .featured-project-parent .left {
+        width: 80vw;
     }
 }

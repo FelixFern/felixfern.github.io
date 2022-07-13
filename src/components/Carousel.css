@@ -5,6 +5,7 @@
     overflow: hidden;
 }
 .images-list {
+    width: 43vw;
     display: flex;
     overflow: hidden;
 }
@@ -39,6 +40,9 @@
         width: 80vw;
         border-radius: 10px;
         overflow: hidden;
+    }
+    .images-list {
+        width: 80vw;
     }
     .thumb {
         display: none;
