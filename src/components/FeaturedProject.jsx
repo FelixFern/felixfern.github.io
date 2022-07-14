@@ -1,18 +1,12 @@
 import React from 'react'
 import { SiReact, SiFigma, SiJavascript, SiFlutter, SiFirebase, SiHtml5, SiCss3, SiStrapi, SiNodedotjs, SiExpress, SiTailwindcss, SiFlask , SiGithub } from 'react-icons/si'
 import { BiLinkExternal } from 'react-icons/bi'
-import AOS from 'aos';
 
 import Carousel from './Carousel'
 import './FeaturedProject.css'
-import { useEffect } from 'react';
 
 
 function FeaturedProject({ title, subtitle, desc, stacks, images, repo, project }) {
-    useEffect(() => {
-        AOS.init()
-    }, [])
-    
     return (
         <div className='featured-project-parent' data-aos='zoom-in-right'>
             <div className='left'>

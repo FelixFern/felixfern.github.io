@@ -96,6 +96,7 @@ header .nav-links .links h3:hover, .btn-orange{
 
 @media only screen and (max-width: 800px) {
     header { 
+        overflow-x: hidden;
         margin-top: 10%;
         display: block;
     }
@@ -132,6 +133,7 @@ header .nav-links .links h3:hover, .btn-orange{
     .nav-links {
         position: absolute;
         text-align: right;
+        overflow: hidden;
         right: 8vw;
         flex-direction: column;
         transform: translateY(50px);
@@ -149,9 +151,11 @@ header .nav-links .links h3:hover, .btn-orange{
         background-color: var(--bg-color);
     }
     .display-none {
-        transform: translateX(200%);
+        opacity: 0;
+        transform: translateX(150%);
     }
     .display-block {
+        opacity: 1;
         transform: translateX(0%);
     }
 }

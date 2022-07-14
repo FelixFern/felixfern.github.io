@@ -23,10 +23,8 @@
 html { 
     margin: 0;
     padding: 0;
-    width: 100vw;
     background-color: var(--bg-color);
-    overflow-x: hidden;
-    height: fit-content;
+    overflow-x: hidden !important;
     scroll-behavior: smooth;
 }
 h1, h2, h3, h4 {
@@ -37,20 +35,9 @@ p {
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
 }
-/* Modal */
-.modal-parent {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    z-index: 100;
-}
-.m-display-none {
-    display: none;
-}
 .main-container {
-    width: 100vw;
     display: flex;
-    overflow: hidden;
+    overflow-x: hidden !important;
 }
 .social-media {
     width: 3vw;
@@ -69,6 +56,7 @@ p {
 /* Home */
 .home {
     height: 100vh;
+    overflow: hidden;
 }
 .home h1{
     line-height: 10px;
@@ -369,9 +357,13 @@ p {
     column-gap: 20px;
     margin-top: 20px;
 }
+.about-me .stacks-list {
+    display: flex;
+    justify-content: center; 
+    column-gap: 20px
+}
 .about-me .stacks-list > * {
     font-size: 24px;
-    margin-right: 20px;
     color: var(--orange-accent);
 }
 
@@ -420,7 +412,7 @@ footer p {
 }
 @media only screen and (max-width: 800px) {
     .main-container {
-        width: 100%;
+        overflow-x: hidden !important;
     }
     .social-media {
         display: none;
@@ -428,6 +420,7 @@ footer p {
     /* Home */
     .home .btn {
         padding: 1.5% 3%;
+        border: 1px solid var(--green-accent);
     }
     .home-content {
         top: 50%;
@@ -478,5 +471,10 @@ footer p {
     .about-me .stacks {
         text-align: center;
         display: block;
+    }
+    /* Contact Me */
+    .contact-me .btn {
+        padding: 1.5% 3%;
+        border: 1px solid var(--orange-accent);
     }
 }

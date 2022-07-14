@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { SiReact, SiFigma, SiJavascript, SiFlutter, SiFirebase, SiHtml5, SiCss3, SiStrapi, SiPython, SiFlask, SiTailwindcss, SiGithub } from 'react-icons/si'
 import { BiLinkExternal } from 'react-icons/bi'
-import AOS from 'aos';
 
 import './ProjectBox.css'
-import 'aos/dist/aos.css';
 
 function ProjectBox(props) {
     let stacks = props.stacks
@@ -14,7 +12,6 @@ function ProjectBox(props) {
         if(props.type == 'Web Application' || props.type == 'Portofolio Website') setColor('green')
         else if(props.type == 'Flutter Application') setColor('red')
         else if(props.type == 'Python Script') setColor('orange')
-        AOS.init()
     }, [])
     
     return (

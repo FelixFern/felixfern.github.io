@@ -1,8 +1,17 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useContext } from 'react'
+import { yOffsetContext } from '../context/global'
 import './Navbar.css'
 
 function Navbar() {
     const [hamburger, setHamburger] = useState(false)
+    const { yOffset, setYoffset } = useContext(yOffsetContext)
+    
+    useEffect(() => {
+        if(yOffset != 0) {setHamburger(false)}
+    }, [yOffset])
+    
+    
     return (
         <header>
             <h3 className='name'>felix<span>fernando.</span></h3>
