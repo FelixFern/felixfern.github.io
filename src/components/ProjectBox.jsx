@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { SiReact, SiFigma, SiJavascript, SiFlutter, SiFirebase, SiHtml5, SiCss3, SiStrapi, SiPython, SiGithub } from 'react-icons/si'
+import { SiReact, SiFigma, SiJavascript, SiFlutter, SiFirebase, SiHtml5, SiCss3, SiStrapi, SiPython, SiFlask, SiTailwindcss, SiGithub } from 'react-icons/si'
 import { BiLinkExternal } from 'react-icons/bi'
 import AOS from 'aos';
 
@@ -33,6 +33,8 @@ function ProjectBox(props) {
                             else if(stack.toLowerCase() == "css") return (<SiCss3 className='stack-icon'></SiCss3>)
                             else if(stack.toLowerCase() == "strapi") return (<SiStrapi className='stack-icon'></SiStrapi>)
                             else if(stack.toLowerCase() == "python") return (<SiPython className='stack-icon'></SiPython>)
+                            else if(stack.toLowerCase() == "tailwind") return (<SiTailwindcss key={key} className='stack-icon'></SiTailwindcss>)
+                            else if(stack.toLowerCase() == "flask") return (<SiFlask key={key} className='stack-icon'></SiFlask>)
                         })
                         }
                     </div>

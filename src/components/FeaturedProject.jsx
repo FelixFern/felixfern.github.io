@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiReact, SiFigma, SiJavascript, SiFlutter, SiFirebase, SiHtml5, SiCss3, SiStrapi, SiNodedotjs, SiExpress, SiGithub } from 'react-icons/si'
+import { SiReact, SiFigma, SiJavascript, SiFlutter, SiFirebase, SiHtml5, SiCss3, SiStrapi, SiNodedotjs, SiExpress, SiTailwindcss, SiFlask , SiGithub } from 'react-icons/si'
 import { BiLinkExternal } from 'react-icons/bi'
 import AOS from 'aos';
 
@@ -34,6 +34,8 @@ function FeaturedProject({ title, subtitle, desc, stacks, images, repo, project 
                         else if(stack.toLowerCase() == "strapi") return (<SiStrapi key={key} className='stack-icon'></SiStrapi>)
                         else if(stack.toLowerCase() == "node") return (<SiNodedotjs key={key} className='stack-icon'></SiNodedotjs>)
                         else if(stack.toLowerCase() == "express") return (<SiExpress key={key} className='stack-icon'></SiExpress>)
+                        else if(stack.toLowerCase() == "tailwind") return (<SiTailwindcss key={key} className='stack-icon'></SiTailwindcss>)
+                        else if(stack.toLowerCase() == "flask") return (<SiFlask key={key} className='stack-icon'></SiFlask>)
                     })}
                 </div>
                 <div className='links'>

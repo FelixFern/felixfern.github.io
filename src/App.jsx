@@ -73,7 +73,7 @@ function App() {
                                 <FeaturedProject
                                     title="Wordle Recreated"
                                     subtitle="Web Application"
-                                    desc="Wordle is a famous word guessing game created by Josh Wordle. in this project, the game is recreated using react with javascript local storage."
+                                    desc="Wordle is a famous word guessing game created by Josh Wordle. In this project, the game is recreated using react with javascript local storage."
                                     stacks={['React']}
                                     images={['./img/projects/wordle/wordle-1.png', './img/projects/wordle/wordle-2.png']}
                                     repo={'https://github.com/FelixFern/Wordle-React'}
@@ -82,7 +82,7 @@ function App() {
                                 <FeaturedProject
                                     title="Joel Foo's Portofolio Website"
                                     subtitle="Portofolio Website"
-                                    desc="a fullty responsive portofolio website built for a videographer and filmographer based on Tangerang, Joel Foo. This website is built with Strapi as the CMS, React as the frontend, and designed with Figma."
+                                    desc="a fully responsive portofolio website built for a videographer and filmographer based on Tangerang, Joel Foo. This website is built with Strapi as the CMS, React as the frontend, and designed with Figma."
                                     stacks={['React', 'Strapi', 'Figma']}
                                     images={['./img/projects/joel/joel-1.png', './img/projects/joel/joel-2.png', './img/projects/joel/joel-3.png', './img/projects/joel/joel-4.png', './img/projects/joel/joel-5.png', './img/projects/joel/joel-6.png', './img/projects/joel/joel-7.png']}
                                     repo={'https://github.com/FelixFern/Joel-Portofolio'}
@@ -91,6 +91,14 @@ function App() {
                             </div>
                             <h2 data-aos="fade-right">other <span>works</span></h2>
                             <div className='projects'>
+                                <ProjectBox
+                                    type="Web Application"
+                                    title="CheckIt - Simple To-do List"
+                                    stacks={['React', "Flask", "Tailwind"]}
+                                    desc="a simple CRUD app with React as the frontend and Flask as the backend."
+                                    repo="https://github.com/FelixFern/CheckIt"
+                                    project=''
+                                ></ProjectBox>
                                 <ProjectBox
                                     type="Web Application"
                                     title="Sorting Algorithm Visualizer"
