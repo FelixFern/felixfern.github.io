@@ -1,9 +1,12 @@
 .featured-project-parent {
     display: flex;
-    min-height: 50vh;
+    min-height: 45vh;
     margin-bottom: 100px;
     align-items: center;
     justify-content: space-between;
+}
+.featured-project-parent:first-child {
+    margin-top: 50px;
 }
 .featured-project-parent:nth-child(2n) {
     flex-direction: row-reverse;
@@ -76,9 +79,13 @@
     padding-bottom: 5px;
     border-bottom: 1px solid var(--red-accent);
 }
-.featured-project-parent .links a:hover h3 {
+.featured-project-parent .links:hover a h3 {
     transition: 0.5s;
     opacity: .5;
+}
+.featured-project-parent .links a:hover h3 {
+    transition: 0.5s;
+    opacity: 1;
     transform: translateY(-2px);
 }
 

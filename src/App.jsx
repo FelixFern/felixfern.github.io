@@ -206,13 +206,13 @@ function App() {
                             </div>
                         </div>
                         <div className='footer'>
+                            <p>Developed and Designed by <span>Felix</span>Fernando</p>
                             <div className='social-media'>
                                 <a href='https://github.com/FelixFern'><FaGithub></FaGithub></a>
                                 <a href='https://www.linkedin.com/in/felix-fern/'><FaLinkedin></FaLinkedin></a>
                                 <a href='https://www.instagram.com/felixfern_/'><FaInstagram></FaInstagram></a>
                                 <a href='https://www.youtube.com/channel/UCK-KH0huKdyiDQUvQZQyy_A'><FaYoutube></FaYoutube></a>
                             </div>
-                            <p>Developed and Designed by <span>Felix</span>Fernando</p>
                         </div>
                     </div>
                 </div>

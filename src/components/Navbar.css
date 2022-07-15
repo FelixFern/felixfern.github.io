@@ -7,19 +7,19 @@ header {
     margin-top: 3%;
 }
 header h3 {
-    transition: 0.5s;
     color: white;
     line-height: 0;
 }
 header .name {
+    animation: scaleIn .8s ease;
     cursor: pointer;
 }
+
 header .name span {
     cursor: pointer;
     color: var(--red-accent);
 }
 header span {
-    transition: 0.5s;
     color: var(--green-accent);
 }
 header .nav-links {
@@ -27,10 +27,22 @@ header .nav-links {
     column-gap: 50px;
 }
 header .nav-links .links {
+    transform: scale(0);
+    animation: scaleIn 0.5s ease;
+    animation-fill-mode: both;
     height: fit-content;
     transition: 0.5s;
     color: white;
     text-decoration: none;
+}
+header .nav-links .links:nth-child(1) {
+    animation-delay: 0.2s;
+}
+header .nav-links .links:nth-child(2) {
+    animation-delay: 0.4s;
+}
+header .nav-links .links:nth-child(3) {
+    animation-delay: 0.6s;
 }
 header .nav-links:hover .links h3{
     opacity: .5;
@@ -92,6 +104,15 @@ header .nav-links .links h3:hover, .btn-orange{
     transition: 0.8s;
     background-color: var(--orange-accent);
     border-radius: 5px;
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 @media only screen and (max-width: 800px) {

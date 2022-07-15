@@ -18,7 +18,6 @@
     width: 80%;
     height: fit-content;
 }
-
 .project-main-box .head {
     display: flex;
     align-items: center;
@@ -64,9 +63,14 @@
     column-gap: 10px;
     font-size: 1rem;
 }
-.project-main-box .links a:hover {
+.project-main-box .links:hover a {
     transition: 0.5s;
     opacity: .5;
+}
+.project-main-box .links a:hover {
+    transition: 0.5s;
+    transform: translateY(-2px);
+    opacity: 1;
 }
 
 .green {
