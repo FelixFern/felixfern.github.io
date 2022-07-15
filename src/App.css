@@ -399,12 +399,14 @@ p {
 .footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-top: 1px solid white;
     margin-top: 20px;
     padding: 30px 0px;
 }
 .footer p {
     margin: 0;
+    height: fit-content;
 }
 .footer p span {
     color: var(--red-accent);

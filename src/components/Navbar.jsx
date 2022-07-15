@@ -11,7 +11,6 @@ function Navbar() {
         if(yOffset != 0) {setHamburger(false)}
     }, [yOffset])
     
-    
     return (
         <header>
             <h3 className='name'>felix<span>fernando.</span></h3>

@@ -1,4 +1,6 @@
 import React from 'react'
+import ReactTooltip from 'react-tooltip'
+
 import { SiReact, SiFigma, SiJavascript, SiFlutter, SiFirebase, SiHtml5, SiCss3, SiStrapi, SiNodedotjs, SiExpress, SiTailwindcss, SiFlask , SiGithub } from 'react-icons/si'
 import { BiLinkExternal } from 'react-icons/bi'
 
