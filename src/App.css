@@ -98,11 +98,11 @@ p {
     transform: translateY(-50%);
 }
 .shapes { 
-    z-index: 99;
     width: 80vw;
     height: 100vh;
     position: absolute;
     z-index: -5;
+    overflow: hidden;
 }
 .shapes > * {
     transition: 0.5s;
@@ -396,24 +396,40 @@ p {
     color: white;
     border-radius: 5px;
 }
-footer {
-    width: 100vw;
-    left: 50%;
-    position: absolute;
+.footer {
+    border-top: 1px solid white;
     text-align: center;
-    padding-bottom: 50px;
+    margin-top: 20px;
+    padding: 30px;
 }
-footer p {
-    font-family: 'Open Sans', sans-serif;
-    position: absolute;
-    transform: translate(-50%, -10%);
-    font-weight: 100;
+.footer p {
+    margin: 0;
+}
+.footer p span {
+    color: var(--red-accent);
+}
+.footer .social-media {
+    display: flex;
     margin: auto;
+    justify-content: center;
+    column-gap: 15px;
+    margin-bottom: 10px;
+}
+.footer .social-media a {
+    transition: 0.3s;
+    color: white;
+    font-size: 24px;
+}
+.footer .social-media:hover a {
+    transition: 0.3s;
+    opacity: 0.5;
+}
+.footer .social-media a:hover {
+    transition: 0.3s;
+    opacity: 1;
+    color: var(--orange-accent);
 }
 @media only screen and (max-width: 800px) {
-    .main-container {
-        overflow-x: hidden !important;
-    }
     .social-media {
         display: none;
     }
@@ -443,6 +459,8 @@ footer p {
         margin-bottom: 20px;
     }
     .shapes {
+        overflow-x: hidden;
+        transform: translateX(0);
         opacity: .2;
     }
     /* Works */

@@ -12,11 +12,10 @@
     "react-dom": "^18.1.0",
     "react-icons": "^4.3.1",
     "react-scripts": "5.0.1",
-    "tsparticles": "^2.0.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start --host 0.0.0.0",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
