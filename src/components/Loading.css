@@ -1,0 +1,100 @@
+.loading-parent {
+    z-index: 999;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+.loading-parent .shape-1 {
+    animation: 2s animate-shape ease-in-out infinite;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 60px;
+    height: 60px;
+    border-radius: 2px;
+    background-color: var(--red-accent);
+}
+.ground {
+    animation: 2s animate-ground ease-in-out infinite;
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: white;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ground-2 {
+    animation: 2s animate-ground-2 ease-in-out infinite;
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: white;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes animate-ground {
+    0% {
+        width: 100px;
+    }
+    25% { 
+        width: 120px;
+    }
+    50% {
+        width: 100px;
+    }
+    75% {
+        width: 120px;
+    }
+    100% {
+        width: 100px;
+    }
+}
+
+@keyframes animate-ground-2 {
+    0% {
+        width: 80px;
+    }
+    25% { 
+        width: 100px;
+    }
+    50% {
+        width: 80px;
+    }
+    75% {
+        width: 100px;
+    }
+    100% {
+        width: 80px;
+    }
+}
+
+@keyframes animate-shape {
+    0% {
+        transform: translate(-50%, -60%) rotate(0deg);
+        background-color: var(--red-accent);
+    } 
+    25% {
+        transform: translate(-50%, -100%) rotate(90deg);
+        border: 1px solid var(--green-accent);
+        background-color: var(--bg-color);
+    }
+    50% {
+        transform: translate(-50%, -60%) rotate(0deg);
+        border: none;
+        border: 1px solid var(--orange-accent);
+        border-radius: 100%;
+    }
+    75% {
+        transform: translate(-50%, -100%) rotate(-90deg);
+        background-color: var(--red-accent);
+    }
+    100% {
+        transform: translate(-50%, -60%) rotate(0deg);
+        background-color: var(--red-accent);
+    }
+}

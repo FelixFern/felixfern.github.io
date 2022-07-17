@@ -12,13 +12,17 @@ import ProjectBox from './components/ProjectBox';
 import SocialMedia from './components/SocialMedia';
 import FeaturedProject from './components/FeaturedProject';
 import ScrollTop from './components/ScrollTop';
+import Loading from './components/Loading';
 
 function App() {
     const [ yOffset, setYOffset ] = useState() 
+    const [ loading, setLoading ] = useState(true)
+
     const handleScroll = () => setYOffset(window.scrollY)
     useEffect(() => {
         document.title = "Felix Fernando's Portofolio"
         AOS.init()
+        setInterval(() => setLoading(false), 2000)
         window.addEventListener('scroll', handleScroll, { passive: true})
         return () => window.removeEventListener('scroll', handleScroll)
     }, [])
@@ -27,6 +31,8 @@ function App() {
         if(yOffset >= 800) {setYOffset(1)}
     },[ yOffset ])
 
+    if(loading) return <Loading></Loading>
+    
     return (
         <yOffsetContext.Provider value={{ yOffset, setYOffset }}>
             <div className='main-container'>
