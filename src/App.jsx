@@ -50,7 +50,7 @@ function App() {
                                 <h4 style={{ transform: `translateX(-${yOffset * 0.3}px)`, opacity: `${1 - yOffset * 0.005}` }} >Hi, my name is</h4>
                                 <h1 style={{ transform: `translateX(-${yOffset * 0.2}px)`, opacity: `${1 - yOffset * 0.003}` }}>Felix Fernando</h1> 
                                 <p style={{ transform: `translateX(-${yOffset * 0.25}px)`, opacity: `${1 - yOffset * 0.004}` }} className='home-desc'>i’m currently a student studying Mathematics at Bandung Institute of Technology with huge interest in frontend development and UI/UX design. </p>
-                                <a style={{ opacity: `${1 - yOffset * 0.005}` }} href='#works' className='btn'>check out my work</a>
+                                <a style={{ opacity: `${1 - yOffset * 0.005}` }} href='https://drive.google.com/file/d/1jZVhRPYxr4tkeF4Uqm6IHXSV5xyy36Bh/view?usp=sharing' className='btn'>view resume</a>
                             </div>
                             <div className='shapes' style={{ transform: `translateX(${yOffset * 0.2}px)`}}>
                                 <div className='square'></div>
