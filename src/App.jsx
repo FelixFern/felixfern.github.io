@@ -73,6 +73,15 @@ function App() {
                                 </div>
                                 <div className='featured-projects'>
                                     <FeaturedProject
+                                        title="Handwritten Digit Classifier - Work in Progress"
+                                        subtitle="Web Application"
+                                        desc="a Web application build using react as the frontend, flask as the backend and google sheet to keep the dataset. This web app contain a neural network to predict digit written on the 28 x 28 grid available and user will be able to send data to the dataset to increase the model accuracy, the model used MNIST dataset and user generated data for the training data."
+                                        stacks={['React', 'Flask', 'GSheets']}
+                                        images={['./img/projects/handwritten/handwritten-1.png', './img/projects/handwritten/handwritten-2.png']}
+                                        repo={'https://github.com/FelixFern/Handwritten-Classifier'}
+                                        project={''}
+                                    ></FeaturedProject>
+                                    <FeaturedProject
                                         title="SSK Interior Design"
                                         subtitle="Portofolio Website"
                                         desc="a fully responsive portofolio website created for Sinar Surya Kontrarindo. This project is built with React as the frontend and ExpressJS as the backend, this project utilise ExpressJS to crawl the folder project to access the portofolio by folder. This website project is designed in Figma."
