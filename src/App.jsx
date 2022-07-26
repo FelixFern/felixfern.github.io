@@ -73,7 +73,7 @@ function App() {
                                 </div>
                                 <div className='featured-projects'>
                                     <FeaturedProject
-                                        title="Handwritten Digit Classifier - Work in Progress"
+                                        title="Handwritten Digit Classifier"
                                         subtitle="Web Application"
                                         desc="a Web application build using react as the frontend, flask as the backend and google sheet to keep the dataset. This web app contain a neural network to predict digit written on the 28 x 28 grid available and user will be able to send data to the dataset to increase the model accuracy, the model used MNIST dataset and user generated data for the training data."
                                         stacks={['React', 'Flask', 'GSheets']}
