@@ -20,7 +20,7 @@ function App() {
 
     const handleScroll = () => setYOffset(window.scrollY)
     useEffect(() => {
-        document.title = "Felix Fernando's Portofolio"
+        document.title = "Felix Fernando's Portfolio"
         AOS.init()
         setInterval(() => setLoading(false), 2000)
         window.addEventListener('scroll', handleScroll, { passive: true})
