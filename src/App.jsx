@@ -188,7 +188,7 @@ function App() {
                                     <div className='desc'>
                                         <h1 data-aos='fade-left'>Hi, <span>I'm Felix Fernando</span>,</h1>
                                         <p data-aos='fade-left'>a university student from a small town called Bintan, Kepulauan Riau that is currently studying Mathematics at the Faculty of Mathematics and Natural Sciences, Bandung Institute of Technology. </p>
-                                        <p data-aos='fade-left'>As a huge technology enthusiast since primary school, I've always been attracted to why and how computers work especially on the software side of things. But, why Mathematics? I believe that most algorithms or anything related to computers start from a mathematical equation, so with the basics in math, with that, I hope it can increase my pace in learning and be adaptive to technology progression because it's one of my goals to be proficient in both Mathematics and Computer Sciences.</p>
+                                        <p data-aos='fade-left'>as a huge technoogy enthusiast since primary school, I've always been attracted to why and how computers work especially on the software side of things. But, why Mathematics? I believe that most algorithms or anything related to computers start from a mathematical equation, so with the basics in math, with that, I hope it can increase my pace in learning and be adaptive to technology progression because it's one of my goals to be proficient in both Mathematics and Computer Sciences.</p>
                                     </div>
                                 </div>
                                 <div className='stacks'>
