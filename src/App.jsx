@@ -74,6 +74,15 @@ function App() {
                                 <div className='featured-projects'>
                                     <FeaturedProject
                                         title="Handwritten Digit Classifier"
+                                        subtitle="Company Website"
+                                        desc="a responsive website for a touring and travelling services in Bintan, Kepulauan Riau called Travel & Taxi Naga Bintan. This project is built using React frontend and SASS for the styling framework."
+                                        stacks={['React', 'Sass']}
+                                        images={['./img/projects/bintan-travel/bintan-travel-1.png', './img/projects/bintan-travel/bintan-travel-2.png','./img/projects/bintan-travel/bintan-travel-3.png']}
+                                        repo={''}
+                                        project={'https://bintanttourtravelandtaxi.vercel.app/'}
+                                    ></FeaturedProject>
+                                    <FeaturedProject
+                                        title="Handwritten Digit Classifier"
                                         subtitle="Web Application"
                                         desc="a Web application build using react as the frontend, flask as the backend and google sheet to keep the dataset. This web app contain a neural network to predict digit written on the 28 x 28 grid available and user will be able to send data to the dataset to increase the model accuracy, the model used MNIST dataset and user generated data for the training data."
                                         stacks={['React', 'Flask', 'GSheets']}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiReact, SiFigma, SiJavascript, SiFlutter, SiFirebase, SiHtml5, SiCss3, SiStrapi, SiNodedotjs, SiExpress, SiTailwindcss, SiFlask , SiGithub, SiGooglesheets } from 'react-icons/si'
+import { SiReact, SiFigma, SiJavascript, SiFlutter, SiFirebase, SiHtml5, SiCss3, SiStrapi, SiNodedotjs, SiExpress, SiTailwindcss, SiFlask , SiGithub, SiGooglesheets, SiSass } from 'react-icons/si'
 import { BiLinkExternal } from 'react-icons/bi'
 
 import Carousel from './Carousel'
@@ -31,6 +31,7 @@ function FeaturedProject({ title, subtitle, desc, stacks, images, repo, project 
                         else if(stack.toLowerCase() == "tailwind") return (<SiTailwindcss key={key} className='stack-icon'></SiTailwindcss>)
                         else if(stack.toLowerCase() == "flask") return (<SiFlask key={key} className='stack-icon'></SiFlask>)
                         else if(stack.toLowerCase() == "gsheets") return (<SiGooglesheets key={key} className='stack-icon'></SiGooglesheets>)
+                        else if(stack.toLowerCase() == "sass") return (<SiSass key={key} className='stack-icon'></SiSass>)
                     })}
                 </div>
                 <div className='links'>
