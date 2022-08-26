@@ -73,7 +73,7 @@ function App() {
                                 </div>
                                 <div className='featured-projects'>
                                     <FeaturedProject
-                                        title="Handwritten Digit Classifier"
+                                        title="Travel and Taxi Naga Bintan Website"
                                         subtitle="Company Website"
                                         desc="a responsive website for a touring and travelling services in Bintan, Kepulauan Riau called Travel & Taxi Naga Bintan. This project is built using React frontend and SASS for the styling framework."
                                         stacks={['React', 'Sass']}
