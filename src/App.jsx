@@ -20,7 +20,7 @@ function App() {
 
     const handleScroll = () => setYOffset(window.scrollY)
     useEffect(() => {
-        document.title = "Felix Fernando's Portfolio"
+        document.title = "Felix Fernando's Portofolio"
         AOS.init()
         setInterval(() => setLoading(false), 2000)
         window.addEventListener('scroll', handleScroll, { passive: true})
@@ -75,11 +75,11 @@ function App() {
                                     <FeaturedProject
                                         title="Travel and Taxi Naga Bintan Website"
                                         subtitle="Company Website"
-                                        desc="a responsive website for a touring and travelling services in Bintan, Kepulauan Riau called Travel & Taxi Naga Bintan. This project is built using React frontend and SASS for the styling framework."
-                                        stacks={['React', 'Sass']}
+                                        desc="a responsive website for a touring and travelling services in Bintan, Kepulauan Riau called Travel & Taxi Naga Bintan. This project is built using Next for optimized SEO and SASS for the styling framework."
+                                        stacks={['Next', 'Sass']}
                                         images={['./img/projects/bintan-travel/bintan-travel-1.png', './img/projects/bintan-travel/bintan-travel-2.png','./img/projects/bintan-travel/bintan-travel-3.png']}
                                         repo={''}
-                                        project={'https://bintanttourtravelandtaxi.vercel.app/'}
+                                        project={'https://www.bintanttourtravelandtaxi.com/'}
                                     ></FeaturedProject>
                                     <FeaturedProject
                                         title="Handwritten Digit Classifier"
@@ -96,7 +96,7 @@ function App() {
                                         desc="a fully responsive portofolio website created for Sinar Surya Kontrarindo. This project is built with React as the frontend and ExpressJS as the backend, this project utilise ExpressJS to crawl the folder project to access the portofolio by folder. This website project is designed in Figma."
                                         stacks={['React', 'Express', 'Node', 'Figma']}
                                         images={['./img/projects/ssk/ssk-1.png', './img/projects/ssk/ssk-2.png', './img/projects/ssk/ssk-3.png', './img/projects/ssk/ssk-4.png', './img/projects/ssk/ssk-5.png']}
-                                        repo={''}
+                                        repo={'https://github.com/FelixFern/Interior-Designer-Portofolio'}
                                         project={'https://sskdesigninterior.com/'}
                                     ></FeaturedProject>
                                     <FeaturedProject
