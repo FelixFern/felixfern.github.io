@@ -1,6 +1,8 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, } from 'react';
 import { SiReact, SiJavascript, SiHtml5, SiCss3, SiPython } from 'react-icons/si'
-import {FaLinkedin, FaInstagram, FaGithub, FaTwitter, FaYoutube } from 'react-icons/fa'
+import {FaLinkedin, FaInstagram, FaGithub, FaYoutube } from 'react-icons/fa'
+import { Analytics } from '@vercel/analytics/react';
+
 import { yOffsetContext } from './context/global';
 import AOS from 'aos';
 
@@ -35,6 +37,7 @@ function App() {
     
     return (
         <yOffsetContext.Provider value={{ yOffset, setYOffset }}>
+            <Analytics />
             <div className='main-container'>
                 <ScrollTop></ScrollTop>
                 <div className='social-media'>
@@ -88,7 +91,7 @@ function App() {
                                         stacks={['React', 'Flask', 'GSheets']}
                                         images={['./img/projects/handwritten/handwritten-1.png', './img/projects/handwritten/handwritten-2.png']}
                                         repo={'https://github.com/FelixFern/Handwritten-Classifier'}
-                                        project={''}
+                                        project={'http://handwritten-classifier.vercel.app/'}
                                     ></FeaturedProject>
                                     <FeaturedProject
                                         title="SSK Interior Design"

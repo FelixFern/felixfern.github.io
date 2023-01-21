@@ -12,7 +12,7 @@ function Carousel({images}) {
         xOffset == 0 ? setXOffset(0) : setXOffset(xOffset + 43)
     }
     const moveRight = () => {
-        xOffset <= -(images.length - 1) * 43  ? setXOffset(0) : setXOffset(xOffset - 43)
+        xOffset <= -(images.length - 1) * 43 ? setXOffset(0) : setXOffset(xOffset - 43)
     }
 
     return (
