@@ -3,7 +3,6 @@
     border-radius: 10px;
     overflow: hidden;
     width: calc(100% - 3px);
-    height: fit-content;
     padding: 20px 0;
 }
 .project-main-box .bg-image{
