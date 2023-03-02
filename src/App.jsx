@@ -151,7 +151,7 @@ function App() {
                                         type="Python Script"
                                         title="Pit Viper Simulation"
                                         stacks={["Python"]}
-                                        desc="a simulation of pit viper hunting for prey (rodent)."
+                                        desc="a mathematical agent based model simulation of pit viper hunting for prey (rodent)."
                                         repo='https://github.com/FelixFern/MA2151-Simulation-and-Mathematical-Computation/tree/main/Pit%20Viper%20Simulation'
                                         project=''
                                     ></ProjectBox>
