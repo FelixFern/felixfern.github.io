@@ -82,7 +82,7 @@ function App() {
                                         stacks={['Next', 'Sass']}
                                         images={['./img/projects/bintan-travel/bintan-travel-1.png', './img/projects/bintan-travel/bintan-travel-2.png','./img/projects/bintan-travel/bintan-travel-3.png']}
                                         repo={''}
-                                        project={'https://www.bintanttourtravelandtaxi.com/'}
+                                        project={'https://travel-website-next-felixfern.vercel.app/'}
                                     ></FeaturedProject>
                                     <FeaturedProject
                                         title="Handwritten Digit Classifier"
