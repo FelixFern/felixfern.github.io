@@ -204,7 +204,7 @@ function App() {
                                     </div>
                                 </div>
                                 <div className='stacks'>
-                                    <h3 data-aos="fade">Programming Languange / Tech Stacks : </h3>
+                                    <h3 data-aos="fade">Programming Language / Tech Stacks : </h3>
                                     <div className='stacks-list' data-aos='fade-left'>
                                         <SiPython></SiPython>
                                         <SiHtml5></SiHtml5>
